@@ -1,0 +1,1 @@
+INSERT INTO rapistev.users (id, Cedula, Nombre, Apellido, User, Contraseña, Correo, idTipo, idActivo) VALUES (1, 1045741659, 'Jorge', 'Aldana', 'Dreft', '12345', 'jorge@gmail.com', 1, 1);
