@@ -5,10 +5,10 @@ $('document').ready(function () {
                 required: true
             },
             user: {
-                required:true
+                required: true
             }
         },
-        messages:{
+        messages: {
             password: {
                 required: "Por favor ingresa tu contraseña"
             },
@@ -17,19 +17,25 @@ $('document').ready(function () {
         submitHandler: function submitForm() {
             var data = $('#login-form').serialize();
             $.ajax({
-                type : 'POST',
-                url : '../../App/public/login.php',
-                data : data,
-                beforeSend: function(){
+                type: 'POST',
+                url: '../../App/public/login.php',
+                data: data,
+                beforeSend: function () {
                     $('#passerror').fadeOut();
                     $('#ingresar').html("Ingresando, Espere por favor...");
                 },
                 success: function (data) {
                     console.log(data);
-                    if(data === "ok"){
+                    if (data === "ok") {
                         $('#ingresar').html("Sesion inciada, espere por favor...");
-                        setTimeout(' window.location.href = "cuenta.php"; ',3000);
-                    }else{
+                        setTimeout(' window.location.href = "cuenta.php"; ', 3000);
+                    } else if (data.includes("<br />")) {
+                        $('#passerror').fadeIn(1000, function () {
+                            $('#passerror').addClass('alert-danger');
+                            $('#passerror').html("No se puede conectar a la base de datos");
+                            $('#ingresar').html("Ingresar");
+                        })
+                    }else {
                         $('#passerror').fadeIn(1000, function () {
                             $('#passerror').addClass('alert-danger');
                             $('#passerror').html("Usuario o contraseña incorrecta");
