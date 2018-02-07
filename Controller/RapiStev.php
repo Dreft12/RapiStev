@@ -1,8 +1,8 @@
 <?php
-include('C:\xampp\htdocs\RapiStev\Objects\Usuarios.php');
-include('C:\xampp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
-/*include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
-include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');*/
+/*include('C:\xampp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xampp\htdocs\RapiStev\DB\ConnectionMYSQL.php');*/
+include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
 
 class RapiStev
 {

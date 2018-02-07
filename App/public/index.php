@@ -26,7 +26,7 @@ if(!empty($_COOKIE['UserId'])){
     <body>
     <div class="container col-12 modal-header header">
         <h1 class="h1 col-md-1 logo d-flex">
-            <a href="index.php"><span>RAPI</span><span>STEV</span></a>
+            <a class="link-logo" href="index.php"><span>RAPI</span><span>STEV</span></a>
         </h1>
     </div>
     <div class="container col-lg-6 col-sm-12 d-flex login">

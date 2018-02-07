@@ -11,7 +11,7 @@ try{
             $_SESSION['User'] = $row;
            setcookie("UserId", $row['id'], time()+(60*60*24*30));
         }else{
-            echo "Usuario o contraseña incorrecta" . $_POST['recuerdame'];
+            echo "Usuario o contraseña incorrecta";
         }
     }
 }catch (PDOException $e){

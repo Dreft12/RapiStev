@@ -6,6 +6,7 @@ if (!isset($_SESSION["RapiStev"])) {
 }
 if (empty($_COOKIE['UserId'])){
     header("Location: index.php");
+    echo "<script>console.log('chupala');</script>";
 }
 ?>
 <!doctype html>
@@ -29,13 +30,12 @@ if (empty($_COOKIE['UserId'])){
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <?php $_SESSION['RapiStev']->menu(); ?>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <div class="input-group mb-3">
+            <div class="input-group div-search mb-3">
                 <input type="text" class="form-control text-search" placeholder="Ingresa tu busqueda" aria-label="Ingresa tu busqueda" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-search btn-outline-secondary" type="button"><i class="material-icons">search</i></button>
