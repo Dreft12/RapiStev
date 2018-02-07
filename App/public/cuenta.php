@@ -4,6 +4,9 @@ session_start();
 if (!isset($_SESSION["RapiStev"])) {
     $_SESSION["RapiStev"] = new RapiStev();
 }
+if (empty($_COOKIE['UserId'])){
+    header("Location: index.php");
+}
 ?>
 <!doctype html>
 <html lang="es">

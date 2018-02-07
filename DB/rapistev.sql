@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-02-2018 a las 22:33:12
+-- Tiempo de generación: 07-02-2018 a las 02:31:38
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -89,7 +89,8 @@ CREATE TABLE `valorparametro` (
 INSERT INTO `valorparametro` (`id`, `id_Parametro`, `Valor`, `ValorX`, `Descripcion`, `Estado`) VALUES
 (1, 1, 'Inicio', 'index.php', 'Pagina Principal', 'A'),
 (2, 1, 'Quienes somos', 'quienes-somos.php', 'Informacion', 'A'),
-(3, 1, 'Pagos', 'pagos.php', 'Pagar cuentas', 'A');
+(3, 1, 'Pagos', 'pagos.php', 'Pagar cuentas', 'A'),
+(4, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
 
 --
 -- Índices para tablas volcadas
@@ -138,7 +139,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `valorparametro`
 --
 ALTER TABLE `valorparametro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas

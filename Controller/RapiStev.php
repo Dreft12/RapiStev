@@ -1,6 +1,8 @@
 <?php
-include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
-include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
+include('C:\xampp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xampp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
+/*include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');*/
 
 class RapiStev
 {
@@ -15,5 +17,15 @@ class RapiStev
             </li>";
             }
         }
+    }
+
+    public function registro(Usuarios $user){
+        $exito=false;
+        $sql = "INSERT INTO users(Cedula, Nombre, Apellido, User, Contraseña, Correo, idTipo, idActivo) VALUES(".$user->getCedula().",".$user->getNombre().",".$user->getApellido().",
+        ".$user->getUser().",".$user->getPass().",".$user->getEmail().",1,1) ";
+        if(ConnectionMYSQL::MySQLI()->query($sql)===TRUE){
+             $exito = true;
+        }
+        return $exito;
     }
 }

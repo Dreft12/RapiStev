@@ -9,9 +9,9 @@ try{
         if($row['Contraseña'] == $_POST['password']){
             echo "ok";
             $_SESSION['User'] = $row;
+           setcookie("UserId", $row['id'], time()+(60*60*24*30));
         }else{
-            echo "Usuario o contraseña incorrecta";
-
+            echo "Usuario o contraseña incorrecta" . $_POST['recuerdame'];
         }
     }
 }catch (PDOException $e){

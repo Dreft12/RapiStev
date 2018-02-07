@@ -15,8 +15,9 @@ class Usuarios
     private $tipo;
     private $email;
     private $activo;
+    private $cedula;
 
-    public function __construct($user = null, $pass = null, $nombre = null, $apellido = null, $tipo = null, $email = null, $activo = null)
+    public function __construct($user = null, $pass = null, $nombre = null, $apellido = null, $tipo = null, $email = null, $cedula=null, $activo = null)
     {
         $this->user = $user;
         $this->pass = $pass;
@@ -24,6 +25,7 @@ class Usuarios
         $this->apellido = $apellido;
         $this->tipo = $tipo;
         $this->email = $email;
+        $this->cedula = $cedula;
         $this->activo = $activo;
     }
 
@@ -45,6 +47,15 @@ class Usuarios
         return $this->pass;
     }
 
+    public function getCedula()
+    {
+        return $this->cedula;
+    }
+
+    public function setCedula($cedula): void
+    {
+        $this->cedula = $cedula;
+    }
 
     public function setPass($pass): void
     {

@@ -4,6 +4,10 @@ session_start();
 if (!isset($_SESSION["RapiStev"])) {
     $_SESSION["RapiStev"] = new RapiStev();
 }
+
+if(!empty($_COOKIE['UserId'])){
+    header("Location: cuenta.php");
+}
 ?>
 
 <DOCTYPE html>
@@ -17,10 +21,6 @@ if (!isset($_SESSION["RapiStev"])) {
         <link href="../../Resources/css/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
-
-
-
-
         <title>RapiStev - Pagina principal</title>
     </head>
     <body>
@@ -43,7 +43,7 @@ if (!isset($_SESSION["RapiStev"])) {
                            placeholder="Ingrese Contraseña">
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <input type="checkbox" class="form-check-input" name="recuerdame" id="dropdownCheck">
                     <label class="form-check-label" for="dropdownCheck">
                         Recuerda mi Sesión
                     </label>
@@ -51,8 +51,8 @@ if (!isset($_SESSION["RapiStev"])) {
                 <button type="submit" id="ingresar" value="Ingresar" class="btn btn-primary">Ingresar</button>
                 <hr>
                 <div class="info">
-                    <a class="col-6" href="#">¿Nuevo aquí? Registrate</a><br>
-                    <a class="col-6" href="#">¿Olvidaste la contraseña?</a>
+                    <a class="col-6" href="registrate.php">¿Nuevo aquí? Registrate</a><br>
+                    <a class="col-6" href="recuperar.php">¿Olvidaste la contraseña?</a>
                 </div>
             </form>
         </div>
