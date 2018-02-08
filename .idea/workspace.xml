@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa01582-c3dc-4e62-8452-47da0e3ad771" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f5bc346-0cd3-4f26-b9a0-2450baec169f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f5bc346-0cd3-4f26-b9a0-2450baec169f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/public/cuenta.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/public/cuenta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/public/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/public/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/RapiStev.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/RapiStev.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/public/registrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/public/registrate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +41,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="rapistev: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rapistev@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="rapistev: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -50,8 +56,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+            <state relative-caret-position="1219">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -59,8 +65,8 @@
       <file leaf-file-name="cuenta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/public/cuenta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="480">
+              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -78,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/App/public/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -86,7 +92,7 @@
       <file leaf-file-name="ConnectionMYSQL.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB/ConnectionMYSQL.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
+            <state relative-caret-position="713">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
@@ -95,26 +101,35 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="529">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="30" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="372">
+              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="valorparametro" pinned="false" current-in-tab="true">
+      <file leaf-file-name="valorparametro" pinned="false" current-in-tab="false">
         <entry file="das://table:/2fc24104/9f5bc346-0cd3-4f26-b9a0-2450baec169f/rapistev.valorparametro">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/public/registrate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -131,6 +146,12 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>navbar</find>
+      <find>hover</find>
+      <find>text</find>
+      <find>text-s</find>
+    </findStrings>
     <replaceStrings>
       <replace>getUser</replace>
     </replaceStrings>
@@ -145,15 +166,15 @@
         <option value="$PROJECT_DIR$/../Biblioteca/Biblioteca.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/DB/ConnectionMYSQL.php" />
-        <option value="$PROJECT_DIR$/Resources/js/app.js" />
         <option value="$PROJECT_DIR$/App/public/logout.php" />
         <option value="$PROJECT_DIR$/Objects/Usuarios.php" />
-        <option value="$PROJECT_DIR$/App/public/registrate.php" />
         <option value="$PROJECT_DIR$/Controller/RapiStev.php" />
         <option value="$PROJECT_DIR$/App/public/index.php" />
-        <option value="$PROJECT_DIR$/Resources/css/styles.css" />
-        <option value="$PROJECT_DIR$/App/public/cuenta.php" />
         <option value="$PROJECT_DIR$/App/public/login.php" />
+        <option value="$PROJECT_DIR$/App/public/registrate.php" />
+        <option value="$PROJECT_DIR$/Resources/js/app.js" />
+        <option value="$PROJECT_DIR$/App/public/cuenta.php" />
+        <option value="$PROJECT_DIR$/Resources/css/styles.css" />
       </list>
     </option>
   </component>
@@ -177,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +242,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,20 +299,22 @@
       <workItem from="1517979415337" duration="335000" />
       <workItem from="1517979816142" duration="1533000" />
       <workItem from="1517981527634" duration="1018000" />
+      <workItem from="1518110914046" duration="4908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52801000" />
+    <option name="totallyTimeSpent" value="57709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15778251" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.328877" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.25906184" />
+      <window_info anchor="right" id="Database" order="3" weight="0.25906184" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -307,12 +330,38 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32934782" />
+      <window_info anchor="right" id="Database" order="3" weight="0.25906184" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.328877" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App/public/login.php">
@@ -499,7 +548,6 @@
     </entry>
     <entry file="das://table:/bf1e3872/9f5bc346-0cd3-4f26-b9a0-2450baec169f/rapistev.users" />
     <entry file="das://table:/bf1e3872/9f5bc346-0cd3-4f26-b9a0-2450baec169f/rapistev.valorparametro" />
-    <entry file="file://$PROJECT_DIR$/App/public/registrate.php" />
     <entry file="file://$PROJECT_DIR$/Controller/RapiStev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -509,43 +557,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DB/ConnectionMYSQL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
+        <state relative-caret-position="713">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/public/cuenta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/public/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="529">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="30" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/Resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        <state relative-caret-position="1219">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -553,6 +587,27 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/public/registrate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/public/cuenta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
         </state>
       </provider>
     </entry>

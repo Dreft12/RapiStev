@@ -1030,110 +1030,116 @@
       <DataType>varchar(100)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="243" name="User">
+    <column id="256" parent="243" name="Sexo">
       <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="243" name="User">
+      <Position>6</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="243" name="Contraseña">
-      <Position>6</Position>
+    <column id="258" parent="243" name="Contraseña">
+      <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="243" name="Correo">
-      <Position>7</Position>
+    <column id="259" parent="243" name="Correo">
+      <Position>8</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="243" name="idTipo">
-      <Position>8</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="260" parent="243" name="idActivo">
+    <column id="260" parent="243" name="idTipo">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="261" parent="243" name="users_id_uindex">
+    <column id="261" parent="243" name="idActivo">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="262" parent="243" name="users_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="262" parent="243" name="users_Cedula_uindex">
+    <index id="263" parent="243" name="users_Cedula_uindex">
       <ColNames>Cedula</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="263" parent="243" name="PRIMARY">
+    <key id="264" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="264" parent="243" name="users_id_uindex">
+    <key id="265" parent="243" name="users_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="265" parent="243" name="users_Cedula_uindex">
+    <key id="266" parent="243" name="users_Cedula_uindex">
       <ColNames>Cedula</ColNames>
       <UnderlyingIndexName>users_Cedula_uindex</UnderlyingIndexName>
     </key>
-    <column id="266" parent="244" name="id">
+    <column id="267" parent="244" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="244" name="id_Parametro">
+    <column id="268" parent="244" name="id_Parametro">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="244" name="Valor">
+    <column id="269" parent="244" name="Valor">
       <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="244" name="ValorX">
+    <column id="270" parent="244" name="ValorX">
       <Position>4</Position>
       <DataType>varchar(200)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="244" name="Descripcion">
+    <column id="271" parent="244" name="Descripcion">
       <Position>5</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="244" name="Estado">
+    <column id="272" parent="244" name="Estado">
       <Position>6</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="272" parent="244" name="valorParametro_id_uindex">
+    <index id="273" parent="244" name="valorParametro_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="273" parent="244" name="valorParametro_parametro_id_fk">
+    <index id="274" parent="244" name="valorParametro_parametro_id_fk">
       <ColNames>id_Parametro</ColNames>
     </index>
-    <key id="274" parent="244" name="PRIMARY">
+    <key id="275" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="275" parent="244" name="valorParametro_id_uindex">
+    <key id="276" parent="244" name="valorParametro_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>valorParametro_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="276" parent="244" name="valorParametro_parametro_id_fk">
+    <foreign-key id="277" parent="244" name="valorParametro_parametro_id_fk">
       <ColNames>id_Parametro</ColNames>
       <RefSchemaName>rapistev</RefSchemaName>
       <RefTableName>parametro</RefTableName>

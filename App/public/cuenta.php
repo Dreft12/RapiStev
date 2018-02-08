@@ -36,7 +36,7 @@ if (empty($_COOKIE['UserId'])){
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <div class="input-group div-search mb-3">
-                <input type="text" class="form-control text-search" placeholder="Ingresa tu busqueda" aria-label="Ingresa tu busqueda" aria-describedby="basic-addon2">
+                <input type="text" class="text-search" placeholder="Ingresa tu busqueda" aria-label="Ingresa tu busqueda" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-search btn-outline-secondary" type="button"><i class="material-icons">search</i></button>
                 </div>
