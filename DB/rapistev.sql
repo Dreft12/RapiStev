@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2018 a las 02:31:38
+-- Tiempo de generación: 08-02-2018 a las 22:11:44
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -53,6 +53,7 @@ CREATE TABLE `users` (
   `Cedula` int(11) NOT NULL,
   `Nombre` varchar(100) NOT NULL,
   `Apellido` varchar(100) DEFAULT NULL,
+  `Sexo` varchar(10) NOT NULL,
   `User` varchar(200) NOT NULL,
   `Contraseña` varchar(255) NOT NULL,
   `Correo` varchar(200) NOT NULL,
@@ -64,8 +65,8 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `Cedula`, `Nombre`, `Apellido`, `User`, `Contraseña`, `Correo`, `idTipo`, `idActivo`) VALUES
-(1, 1045741659, 'Jorge', 'Aldana', 'Dreft', '12345', 'jorge@gmail.com', 1, 1);
+INSERT INTO `users` (`id`, `Cedula`, `Nombre`, `Apellido`, `Sexo`, `User`, `Contraseña`, `Correo`, `idTipo`, `idActivo`) VALUES
+(1, 1045741659, 'Jorge', 'Aldana', '', 'Dreft', '12345', 'jorge@gmail.com', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -88,9 +89,10 @@ CREATE TABLE `valorparametro` (
 
 INSERT INTO `valorparametro` (`id`, `id_Parametro`, `Valor`, `ValorX`, `Descripcion`, `Estado`) VALUES
 (1, 1, 'Inicio', 'index.php', 'Pagina Principal', 'A'),
-(2, 1, 'Quienes somos', 'quienes-somos.php', 'Informacion', 'A'),
+(2, 1, 'Quienes somos', 'quienes-somos.php', 'Informacion', 'N'),
 (3, 1, 'Pagos', 'pagos.php', 'Pagar cuentas', 'A'),
-(4, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
+(4, 1, 'Perfil', 'perfil.php', 'Perfil Usuario', 'A'),
+(5, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
 
 --
 -- Índices para tablas volcadas
@@ -139,7 +141,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `valorparametro`
 --
 ALTER TABLE `valorparametro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
