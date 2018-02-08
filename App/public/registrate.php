@@ -64,7 +64,7 @@ if (!isset($_SESSION["RapiStev"])) {
             <input type="number" required class="form-control" placeholder="Ingrese la cedula" id="cedula" name="cedula" aria-label="Ingrese la cedula" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3 col-lg-12 justify-content-between submit">
-            <input type="submit" value="Registrar cuenta" class="btn btn-primary col-lg-4">
+            <input type="submit" id="btn-registrar" value="Registrar cuenta" class="btn btn-primary col-lg-4">
             <input type="reset" value="Limpiar" class="btn btn-primary col-lg-4">
             <input type="button" value="Regresar" id="regresar"  class="btn btn-primary col-lg-4">
         </div>
@@ -75,5 +75,8 @@ if (!isset($_SESSION["RapiStev"])) {
     <script src="../../Resources/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="../../Resources/js/app.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<?php
+print_r($_POST);
+?>
 </body>
 </html>

@@ -25,7 +25,6 @@ $('document').ready(function () {
                     $('#ingresar').html("Ingresando, Espere por favor...");
                 },
                 success: function (data) {
-                    console.log(data);
                     if (data === "ok") {
                         $('#ingresar').html("Sesion inciada, espere por favor...");
                         setTimeout(' window.location.href = "cuenta.php"; ', 3000);
@@ -35,7 +34,7 @@ $('document').ready(function () {
                             $('#passerror').html("No se puede conectar a la base de datos");
                             $('#ingresar').html("Ingresar");
                         })
-                    }else {
+                    } else {
                         $('#passerror').fadeIn(1000, function () {
                             $('#passerror').addClass('alert-danger');
                             $('#passerror').html("Usuario o contraseña incorrecta");
@@ -47,9 +46,43 @@ $('document').ready(function () {
             return false;
         }
     });
+    $('#register-form').validate({
+        submitHandler: function registerForm() {
+            var data = $('#register-form').serialize();
+            $.ajax({
+                type: 'POST',
+                url: '../../App/public/registroAjax.php',
+                data: data,
+                beforeSend: function () {
+                    $('#passerrorRe').fadeOut();
+                    $('#btn-registrar').html("Registrando, Espere por favor...");
+                },
+                success: function (data) {
+                    console.log(data);
+                    if (data === "ok") {
+                        $('#btn-registrar').html("Cuenta creada correctamente, inicie sesion");
+                        setTimeout(' window.location.href = "index.php"; ', 3000);
+                    } else if (data.includes("<br />")) {
+                        $('#passerrorRe').fadeIn(1000, function () {
+                            $('#passerrorRe').addClass('alert-danger');
+                            $('#passerrorRe').html("No se puede conectar a la base de datos");
+                            $('#btn-registrar').html("Registrar cuenta");
+                        })
+                    } else {
+                        $('#passerrorRe').fadeIn(1000, function () {
+                            $('#passerrorRe').addClass('alert-danger');
+                            $('#passerrorRe').html("Esta cuenta ya existe");
+                            $('#btn-registrar').html("Registrar cuenta");
+                        });
+                    }
+                }
+            })
+        }
+    });
 });
 
 
 $('#regresar').click(function () {
     window.history.back();
-})
+});
+
