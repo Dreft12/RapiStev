@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2018 a las 22:11:44
+-- Tiempo de generación: 09-02-2018 a las 23:11:38
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -54,7 +54,7 @@ CREATE TABLE `users` (
   `Nombre` varchar(100) NOT NULL,
   `Apellido` varchar(100) DEFAULT NULL,
   `Sexo` varchar(10) NOT NULL,
-  `User` varchar(200) NOT NULL,
+  `NUser` varchar(200) NOT NULL,
   `Contraseña` varchar(255) NOT NULL,
   `Correo` varchar(200) NOT NULL,
   `idTipo` int(11) NOT NULL,
@@ -65,8 +65,10 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `Cedula`, `Nombre`, `Apellido`, `Sexo`, `User`, `Contraseña`, `Correo`, `idTipo`, `idActivo`) VALUES
-(1, 1045741659, 'Jorge', 'Aldana', '', 'Dreft', '12345', 'jorge@gmail.com', 1, 1);
+INSERT INTO `users` (`id`, `Cedula`, `Nombre`, `Apellido`, `Sexo`, `NUser`, `Contraseña`, `Correo`, `idTipo`, `idActivo`) VALUES
+(1, 1045741659, 'Jorge', 'Aldana', '1', 'Dreft', '12345', 'jorge@gmail.com', 1, 1),
+(4, 123, 'Jorge', 'Aldana', '1', 'asd', '1234', 'jorgeelieceraldana.92@gmail.com', 1, 1),
+(5, 1234, 'Jorge', 'Aldana', '1', 'Dreft1', '123', 'jorgeelieceraldana.92@gmail.com', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -89,10 +91,12 @@ CREATE TABLE `valorparametro` (
 
 INSERT INTO `valorparametro` (`id`, `id_Parametro`, `Valor`, `ValorX`, `Descripcion`, `Estado`) VALUES
 (1, 1, 'Inicio', 'index.php', 'Pagina Principal', 'A'),
-(2, 1, 'Quienes somos', 'quienes-somos.php', 'Informacion', 'N'),
+(2, 1, 'Quienes somos', 'quienes-somos.php', 'Informacion', 'A'),
 (3, 1, 'Pagos', 'pagos.php', 'Pagar cuentas', 'A'),
 (4, 1, 'Perfil', 'perfil.php', 'Perfil Usuario', 'A'),
-(5, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
+(5, 1, 'Solicitar', 'solicitar.php', 'Solicitar pedido', 'A'),
+(7, 1, 'Seguimiento', 'seguimiento.php', 'Seguimiento Pedido', 'A'),
+(8, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
 
 --
 -- Índices para tablas volcadas
@@ -111,7 +115,8 @@ ALTER TABLE `parametro`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_id_uindex` (`id`),
-  ADD UNIQUE KEY `users_Cedula_uindex` (`Cedula`);
+  ADD UNIQUE KEY `users_Cedula_uindex` (`Cedula`),
+  ADD UNIQUE KEY `users_User_uindex` (`NUser`);
 
 --
 -- Indices de la tabla `valorparametro`
@@ -135,13 +140,13 @@ ALTER TABLE `parametro`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `valorparametro`
 --
 ALTER TABLE `valorparametro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
