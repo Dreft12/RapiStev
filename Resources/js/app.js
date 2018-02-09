@@ -7,12 +7,14 @@ $('document').ready(function () {
             user: {
                 required: true
             }
+
         },
         messages: {
             password: {
                 required: "Por favor ingresa tu contraseña"
             },
-            user: "Por favor ingrese su usuario"
+            user: "Por favor ingrese su usuario",
+
         },
         submitHandler: function submitForm() {
             var data = $('#login-form').serialize();
@@ -47,6 +49,16 @@ $('document').ready(function () {
         }
     });
     $('#register-form').validate({
+        messages: {
+            pass: "Por favor escriba una contraseña",
+            user: "Por favor ingrese su usuario",
+            pass2: "Por favor escriba la misma contraseña anterior",
+            apellido: "Por favor ingrese su apellido",
+            email: "Por favor ingrese su correo",
+            sexo: "Por favor seleccion su sexo",
+            nombre: "Por favor ingrese su nombre",
+            cedula: "Por favor ingrese su cedula"
+        },
         submitHandler: function registerForm() {
             var data = $('#register-form').serialize();
             $.ajax({
@@ -66,12 +78,18 @@ $('document').ready(function () {
                         $('#passerrorRe').fadeIn(1000, function () {
                             $('#passerrorRe').addClass('alert-danger');
                             $('#passerrorRe').html("No se puede conectar a la base de datos");
-                            $('#btn-registrar').html("Registrar cuenta");
+                            $('#btn-registrar').html("Registrar cuenta...");
                         })
-                    } else {
+                    } else if(data === "Ya existe una cuenta con esta cedula"){
                         $('#passerrorRe').fadeIn(1000, function () {
                             $('#passerrorRe').addClass('alert-danger');
-                            $('#passerrorRe').html("Esta cuenta ya existe");
+                            $('#passerrorRe').html("Ya existe una cuenta con esta cedula");
+                            $('#btn-registrar').html("Registrar cuenta");
+                        });
+                    }else if(data === "Ya existe una cuenta con este nombre de usuario"){
+                        $('#passerrorRe').fadeIn(1000, function () {
+                            $('#passerrorRe').addClass('alert-danger');
+                            $('#passerrorRe').html("Ya existe una cuenta con este nombre de usuario");
                             $('#btn-registrar').html("Registrar cuenta");
                         });
                     }

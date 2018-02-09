@@ -16,8 +16,9 @@ class Usuarios
     private $email;
     private $activo;
     private $cedula;
+    private $sexo;
 
-    public function __construct($user = null, $pass = null, $nombre = null, $apellido = null, $tipo = null, $email = null, $cedula=null, $activo = null)
+    public function __construct($user = null, $pass = null, $nombre = null, $apellido = null, $sexo=null, $tipo = null, $email = null, $cedula=null, $activo = null)
     {
         $this->user = $user;
         $this->pass = $pass;
@@ -27,6 +28,19 @@ class Usuarios
         $this->email = $email;
         $this->cedula = $cedula;
         $this->activo = $activo;
+        $this->sexo = $sexo;
+    }
+
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
     }
 
 

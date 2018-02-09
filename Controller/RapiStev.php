@@ -13,7 +13,7 @@ class RapiStev
         while ($res1 = $res->fetch_assoc()) {
             if ($res1['Estado'] == 'A') {
                 echo "<li class=\"nav-item\">
-                <a class=\"nav-link\" href=" . $res1['ValorX'] . ">" . $res1['Valor'] . "</a>
+                <a class=\"nav-link\" href=" . $res1['ValorX'] . " title=".$res1['Descripcion'].">" . $res1['Valor'] . "</a>
             </li>";
             }
         }

@@ -27,19 +27,19 @@ if (!isset($_SESSION["RapiStev"])) {
 </div>
 <div class="container col-lg-6 col-sm-12"><h4 class="d-flex justify-content-center title-register">Registra tu cuenta para realizar pedidos y más</h4></div>
 <div class="container col-lg-6 col-sm-12 d-flex login">
-    <div class="alert col-12" id="passerror" role="alert">
+    <div class="alert col-12" id="passerrorRe" role="alert">
     </div>
     <form class="form rounded col-sm-12" id="register-form" method="post">
         <div class="input-group d-flex flex-column">
             <label class="label-register" for="nombre">Nombre</label>
-            <input type="text" required class="form-control" placeholder="Ingrese Nombre" name="user" id="nombre" aria-label="Ingrese Nombre" aria-describedby="basic-addon1">
+            <input type="text" required class="form-control" placeholder="Ingrese Nombre" name="nombre" id="nombre" aria-label="Ingrese Nombre" aria-describedby="basic-addon1">
             <label class="label-register" for="pass">Apellido</label>
             <input type="text" required class="form-control" placeholder="Ingrese Apellido" name="apellido" id="apellido" aria-label="Ingrese Apellido" aria-describedby="basic-addon1">
         </div>
         <br>
         <div class="input-group mb-3">
             <label class="label-register" for="sexo">Sexo</label>
-            <select class="custom-select" id="sexo">
+            <select class="custom-select" id="sexo" name="sexo" required>
                 <option selected>Seleccion una opcion...</option>
                 <option value="1">Masculino</option>
                 <option value="2">Femenino</option>
@@ -47,7 +47,7 @@ if (!isset($_SESSION["RapiStev"])) {
         </div>
         <div class="input-group mb-3">
             <label class="label-register" for="email">Correo</label>
-            <input type="email" required  class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            <input type="email" required  class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
         </div>
         <div class="input-group mb-3">
             <label class="label-register" for="user">Usuario</label>
@@ -56,7 +56,7 @@ if (!isset($_SESSION["RapiStev"])) {
         <div class="input-group mb-3">
             <label class="label-register" for="pass">Contraseña</label>
             <input type="password" required  class="form-control" placeholder="Ingrese la contraseña" id="pass" name="pass" aria-label="Ingrese la contraseña" aria-describedby="basic-addon1">
-            <label class="label-register" for="pass2">Repita Contraseña</label>
+            <label class="label-register" for="pass2">Repita Contraseña</label><br>
             <input type="password" required  class="form-control" placeholder="Repita la contraseña" id="pass2" name="pass2" aria-label="Repita la contraseña" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
@@ -75,8 +75,5 @@ if (!isset($_SESSION["RapiStev"])) {
     <script src="../../Resources/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="../../Resources/js/app.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-<?php
-print_r($_POST);
-?>
 </body>
 </html>
