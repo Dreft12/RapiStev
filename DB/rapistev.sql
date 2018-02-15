@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2018 a las 23:11:38
+-- Tiempo de generación: 15-02-2018 a las 22:32:10
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -40,7 +40,8 @@ CREATE TABLE `parametro` (
 --
 
 INSERT INTO `parametro` (`id`, `Valor`, `Estado`, `Descripcion`) VALUES
-(1, 'Menu', 1, 'Menu Header');
+(1, 'Menu', 1, 'Menu Header'),
+(2, 'CSexo', 1, 'Combo box sexo');
 
 -- --------------------------------------------------------
 
@@ -66,9 +67,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `Cedula`, `Nombre`, `Apellido`, `Sexo`, `NUser`, `Contraseña`, `Correo`, `idTipo`, `idActivo`) VALUES
-(1, 1045741659, 'Jorge', 'Aldana', '1', 'Dreft', '12345', 'jorge@gmail.com', 1, 1),
-(4, 123, 'Jorge', 'Aldana', '1', 'asd', '1234', 'jorgeelieceraldana.92@gmail.com', 1, 1),
-(5, 1234, 'Jorge', 'Aldana', '1', 'Dreft1', '123', 'jorgeelieceraldana.92@gmail.com', 1, 1);
+(1, 1212, 'Jorge', 'Aldana', '1', 'Dreft', '1234', 'jorgeelieceraldana.92@gmail.com', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -96,7 +95,10 @@ INSERT INTO `valorparametro` (`id`, `id_Parametro`, `Valor`, `ValorX`, `Descripc
 (4, 1, 'Perfil', 'perfil.php', 'Perfil Usuario', 'A'),
 (5, 1, 'Solicitar', 'solicitar.php', 'Solicitar pedido', 'A'),
 (7, 1, 'Seguimiento', 'seguimiento.php', 'Seguimiento Pedido', 'A'),
-(8, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A');
+(8, 1, 'Salir', 'logout.php', 'Cerrar Sesion', 'A'),
+(9, 2, 'Masculino', '1', 'Masculino', 'A'),
+(10, 2, 'Femenino', '2', 'Femenino', 'A'),
+(11, 2, 'Otro', '3', 'Indefinido', 'A');
 
 --
 -- Índices para tablas volcadas
@@ -134,19 +136,19 @@ ALTER TABLE `valorparametro`
 -- AUTO_INCREMENT de la tabla `parametro`
 --
 ALTER TABLE `parametro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `valorparametro`
 --
 ALTER TABLE `valorparametro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Restricciones para tablas volcadas
