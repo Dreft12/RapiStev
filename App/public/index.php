@@ -8,6 +8,7 @@ if (!isset($_SESSION["RapiStev"])) {
 if(!empty($_COOKIE['UserId'])){
     header("Location: cuenta.php");
 }
+echo $_SESSION['MySQL'];
 ?>
 
 <DOCTYPE html>

@@ -19,8 +19,14 @@ class RapiStev
         }
     }
 
-    public function registro(Usuarios $user)
+    public function comboSexo()
     {
-
+        $array = array();
+        $sql = "SELECT v.Valor, v.ValorX, v.Estado FROM valorparametro v WHERE v.id_Parametro = 2";
+        $res = ConnectionMYSQL::MySQLI()->query($sql);
+        while ($res1 = $res->fetch_assoc()) {
+            array_push($array,$res1);
+        }
+        return $array;
     }
 }

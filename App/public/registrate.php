@@ -40,9 +40,11 @@ if (!isset($_SESSION["RapiStev"])) {
         <div class="input-group mb-3">
             <label class="label-register" for="sexo">Sexo</label>
             <select class="custom-select" id="sexo" name="sexo" required>
-                <option selected>Seleccion una opcion...</option>
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
+                <?php
+                foreach ($_SESSION['RapiStev']->comboSexo() as $opcion){
+                    echo "<option value='".$opcion['ValorX']."'>".$opcion['Valor']."</option>";
+                }
+                ?>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -56,8 +58,6 @@ if (!isset($_SESSION["RapiStev"])) {
         <div class="input-group mb-3">
             <label class="label-register" for="pass">Contraseña</label>
             <input type="password" required  class="form-control" placeholder="Ingrese la contraseña" id="pass" name="pass" aria-label="Ingrese la contraseña" aria-describedby="basic-addon1">
-            <label class="label-register" for="pass2">Repita Contraseña</label><br>
-            <input type="password" required  class="form-control" placeholder="Repita la contraseña" id="pass2" name="pass2" aria-label="Repita la contraseña" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
             <label class="label-register" for="cedula">Cedula</label>
