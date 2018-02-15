@@ -8,7 +8,7 @@ class RapiStev
 {
     public function menu()
     {
-        $query = "SELECT v.Valor, v.id, v.Descripcion, v.Estado, v.ValorX FROM valorparametro v JOIN parametro p ON v.id_Parametro = p.id";
+        $query = "SELECT v.Valor, v.id, v.Descripcion, v.Estado, v.ValorX FROM valorparametro v WHERE v.id_Parametro = 1";
         $res = ConnectionMYSQL::MySQLI()->query($query);
         while ($res1 = $res->fetch_assoc()) {
             if ($res1['Estado'] == 'A') {
