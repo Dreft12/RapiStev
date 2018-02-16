@@ -23,7 +23,7 @@ if (empty($_COOKIE['UserId'])){
     <title>Cuenta</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
     <a class="navbar-brand" href="#"><h1 class="h1 col-md-1 logo">
             <span>RAPI</span><span>STEV</span>
         </h1></a>
