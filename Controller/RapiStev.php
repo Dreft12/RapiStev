@@ -1,8 +1,8 @@
 <?php
-/*include('C:\xampp\htdocs\RapiStev\Objects\Usuarios.php');
-include('C:\xampp\htdocs\RapiStev\DB\ConnectionMYSQL.php');*/
-include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
-include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
+include('C:\xampp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xampp\htdocs\RapiStev\DB\ConnectionMYSQL.php');
+/*include('C:\xamppp\htdocs\RapiStev\Objects\Usuarios.php');
+include('C:\xamppp\htdocs\RapiStev\DB\ConnectionMYSQL.php');*/
 
 class RapiStev
 {
@@ -14,6 +14,7 @@ class RapiStev
             if ($res1['Estado'] == 'A') {
                 echo "<li class=\"nav-item\">
                 <a class=\"nav-link\" href=" . $res1['ValorX'] . " title=".$res1['Descripcion'].">" . $res1['Valor'] . "</a>
+                <div class='item-selected' id='".$res1['Valor']."'></div>
             </li>";
             }
         }

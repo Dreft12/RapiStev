@@ -108,3 +108,17 @@ $('#regresar').click(function () {
     window.history.back();
 });
 
+var pathJS = window.location.pathname;
+switch (pathJS){
+    case '/RapiStev/App/public/pagos.php':{
+        $('#Pagos').show();
+    }
+    break;
+    case '/RapiStev/App/public/cuenta.php':{
+        $('#Inicio').show();
+    }
+    break;
+    case '/RapiStev/App/public/perfil.php':{
+        $('#Perfil').show();
+    }
+}

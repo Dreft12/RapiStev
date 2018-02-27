@@ -112,6 +112,19 @@
     .custom-select{
         width: 100%!important;
     }
+
+    .item-selected{
+        content: " ";
+        position: absolute;
+        border: 8px solid rgba(250, 233, 156, 0);
+        border-bottom-color: #fff;
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+        top: 80px;
+        margin-left: 26px;
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1516px) {
@@ -208,3 +221,4 @@
 .info{
     display: flex;
 }
+
